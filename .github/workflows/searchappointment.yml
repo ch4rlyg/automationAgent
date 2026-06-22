@@ -14,7 +14,7 @@ jobs:
 
             - name: Execute curl
               run: |
-                    curl -s -k -X POST "${{ secrets.HOST }}" \
+                    curl -v -s -k -X POST "${{ secrets.HOST }}" \
                     -H "Content-Type: application/x-www-form-urlencoded; charset=utf-8" \
                     -H "X-Microsoftajax: Delta=true" \
                     -H "User-Agent: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:151.0) Gecko/20100101 Firefox/151.0" \
